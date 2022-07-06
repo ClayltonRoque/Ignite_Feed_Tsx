@@ -4,7 +4,7 @@ import ptBR from 'date-fns/esm/locale/pt-BR';
 import { ChangeEvent, FormEvent, InvalidEvent, useState } from 'react';
 import { Avatar } from './Avatar';
 import { Comment } from './Comment';
-import styles from './components/Post.module.css';
+import styles from '../components/Post.module.css';
 
 
 interface Author {

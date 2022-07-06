@@ -1,6 +1,6 @@
 import { PencilLine } from 'phosphor-react'
 
-import styles from './components/Sidebar.module.css'
+import styles from '../components/Sidebar.module.css'
 
 import img from '../assets/kawaii2.gif'
 
