@@ -6,8 +6,34 @@ import img from './assets/lukas.jpg'
 import styles from './App.module.css'
 import './Global.css'
 
+interface Author {
+  avatarUrl: string;
+  name: string;
+  role: string;
+}
 
-const posts = [
+interface Content {
+
+  type: 'paraghaph' | 'link';
+  content: string;
+}
+
+
+interface Posts {
+  id: number;
+  author: Author;
+  content: Content [ ];
+  publishedAt: Date;
+}
+
+type AllProps = {
+  id: number;
+  author: Author;
+  content: Content [ ];
+  publishedAt: Date;
+}
+
+const posts : AllProps[] = [
   {
     id: 1,
     author: {
@@ -61,7 +87,7 @@ export function App() {
       <div className={styles.wrapper}>
         <Sidebar />
         <main>
-          {posts.map(post => {
+          {posts.map((post : Posts ) => {
             return <Post
               key={post.id}
               author={post.author}

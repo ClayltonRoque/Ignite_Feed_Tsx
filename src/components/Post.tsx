@@ -14,7 +14,7 @@ interface Author {
 }
 
 interface Content {
-    type: 'paragraph' | 'link';
+    type: 'paraghaph' | 'link';
     content: string;
 }
 
