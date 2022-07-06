@@ -1,4 +1,4 @@
-import styles from './header.module.css';
+import styles from '../components/Header.module.css'
 
 import ignitelogo from '../assets/ignite-logo.svg';
 
